@@ -1,0 +1,25 @@
+<article>
+
+  <header>
+    <h2>{{headline}}</h2>
+    <h3>{{chapo}}</h3>
+    <p class="date-created">
+      <time datetime="{{dateCreatedISO}}">{{dateCreatedText}}</time>
+    </p>
+    <p class="author-name">{{authorName}}</p>
+    <picture>
+      <img src="{{image[0]}}" />
+    </picture>
+  </header>
+
+  <div>
+    {{content}}
+  </div>
+
+  <footer>
+    <section class="author-presentation">
+      {{authorPresentation}}
+    </section>
+  </footer>
+
+</article>
