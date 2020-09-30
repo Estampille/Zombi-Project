@@ -1,0 +1,113 @@
+.icon-menu:before {
+    content: "🧠";
+  }
+  .icon-cross:before {
+    content: "✹";
+  }
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.logo{
+    max-height:2.9em;
+    padding:0.1em;
+
+}
+.navbar {
+  position: relative;
+  display: flex;
+  background: #444;
+  color: #eee;
+  height: 2.9em;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.home-link {
+  flex-grow: 1;
+}
+
+.navbar ul {
+  max-height: 0;
+  width:100%;
+  transition: max-height 0.3s;
+  position: absolute;
+  background: rgba(64, 64, 64, 0.9);
+  top: 3.9em;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.navbar ul li {
+  list-style-type: none;
+  text-align:center;
+}
+.navbar ul li:last-child {
+    font-size:0.8em;
+}
+
+.navbar a {
+  display: inline-block;
+  color: #eee;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+
+.navbar input[type="checkbox"] {
+  display: none;
+}
+
+.navbar input[type="checkbox"]:checked ~ ul {
+  max-height: 100vh;
+}
+
+.navbar input[type="checkbox"] + label span[class^="icon-"] {
+  display: none;
+  font-size:2em;
+}
+
+.navbar input[type="checkbox"]:not(:checked) + label .icon-menu {
+  display: inline;
+}
+
+.navbar input[type="checkbox"]:checked + label .icon-cross {
+  display: inline;
+}
+
+span {
+  display: inline-block;
+}
+
+.span-1 ~ .span-2 {
+  background: #fcc;
+}
+
+.relative {
+  position: relative;
+  padding: 0.5em;
+  border: 2px solid green;
+}
+
+.absolute {
+  top: 0;
+  right: 0;
+  position: absolute;
+  border: 2px solid red;
+}
+
+@media screen and (min-width:700px){
+    .navbar label{
+        display: none;
+    }
+    .navbar{
+        display:flex;
+    }
+    .home-link {
+        flex-grow: 0;
+    }
+
+}
