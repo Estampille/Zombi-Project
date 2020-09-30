@@ -1,0 +1,48 @@
+h2 {
+  text-align: center;
+}
+
+
+form { 
+
+  margin: 0% auto; 
+
+  width: 300px; 
+
+  padding-top:20px; 
+
+} 
+
+ 
+
+ 
+
+input[type="text"], 
+
+input[type="email"], 
+
+textarea { 
+
+  width: 85%; 
+
+  padding: 8px; 
+
+  margin-bottom: 10px; 
+
+} 
+
+ 
+
+input[type=submit] {
+  background-color: #611b0f;
+  color: white;
+  padding: 12px 20px;
+  border: solid black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#contactForm {
+  border-radius: 5px;
+  background-color: #E5DEDE;
+  padding: 20px;
+}
