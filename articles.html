@@ -1,4 +1,4 @@
-<article>
+<article class="article">
 
   <header>
     <h2>{{headline}}</h2>
@@ -8,12 +8,14 @@
     </p>
     <p class="author-name">{{authorName}}</p>
     <picture>
-      <img src="{{image[0]}}" />
+      <source media="(min-width: 720px)" srcset="{{image[0].tablet.url}}" />
+      <source media="(min-width: 1280px)" srcset="{{image[0].desktop.url}}" />
+      <img src="{{image[0].mobile.url}}" alt="{{image[0].description}}" />
     </picture>
   </header>
 
-  <div>
-    {{content}}
+  <div class="content">
+    {{htmlContent}}
   </div>
 
   <footer>
