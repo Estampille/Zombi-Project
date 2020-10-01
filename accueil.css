@@ -1,27 +1,65 @@
 
 body{
   background-color:#F8F9F8;
+  margin:0px;
 }
 header{
   display: flex;
   padding: 20px;
   align-items: center;
   background-color: #F2C577 ;
+
 }
-.card {
-    margin-top: 10px;
+
+#actualites{
+  width: 100%;
+}
+
+
+
+.article{
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  
 }
 
-.card *{
+.card{
   border-radius: 10px;
-  background-color: #EC612F;
+  width: 210px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color:#976B69;
+  
 }
+.card-body {
+  padding: 10px 20px;
+  
+}
+
+a{
+  margin: 10px 0px;
+  text-decoration: none;
+
+}
+.card-date{
+  color: #3D2D3E;
+  
+}
+
+.card-abstract{
+  margin-top:none;
+  color: #3D2D3E;
+
+}
+
 
 img{
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
   height: 200px;
   width : 200px;
-
 }
