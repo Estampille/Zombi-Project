@@ -11,10 +11,15 @@ header{
 
 }
 
-#actualites{
+#actualites img
+{
   width: 100%;
 }
 
+{
+  100%;
+
+}
 
 
 .article{
@@ -56,7 +61,8 @@ a{
 }
 
 
-img{
+.card-image img{
+  display: inline-block;
   border-radius: 8px;
   background-size: cover;
   background-position: center;
