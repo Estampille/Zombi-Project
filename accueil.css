@@ -1,5 +1,13 @@
 
-
+body{
+  background-color:#F8F9F8;
+}
+header{
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  background-color: #F2C577 ;
+}
 .card {
     margin-top: 10px;
   display: flex;
@@ -9,6 +17,7 @@
 
 .card *{
   border-radius: 10px;
+  background-color: #EC612F;
 }
 
 img{
