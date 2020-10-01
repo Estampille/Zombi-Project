@@ -1,4 +1,7 @@
- 
+const message = 
+
+"Thank you for submitting your request."; 
+
 document 
 
   .getElementById("contactForm") 
@@ -10,6 +13,4 @@ document
     alert(message); 
 
   }); 
-  const message = 
-
-  "Thank you for submitting your request."; 
+  
