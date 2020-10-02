@@ -368,8 +368,7 @@ body{
 h1 a {
   text-decoration:none;
   color:#fff;
-  src: url("https://gauzy.fr/fonts/Adler.woff") format("woff");
-  font-family: 'Adler';
+  font-family: 'Adler', 'Adler-webfont', sans-serif;
 }
 
 header{
@@ -383,39 +382,43 @@ header{
 }
 
 
-.news{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:space-around;
-}
+
 
 #actualites{
   display: flex;
   position : relative;
-  
-  z-index: -1;
+  height:30vh; 
 }
 #actualites h2{
   position: absolute;
-  color:black
-  
-}
-#actualites p{
-  position :absolute;
+  color:black;
+  z-index:  1;
+  margin:2vw;
 }
 
-.actu-image{
-  height:200px; 
+#actualites p{
+  position :absolute;
+  
+}
+
+.actu-image img{
+  height:30vh; 
   position: absolute;
   width: 100%;
   object-fit: cover;
+  z-index: -1;
 }
 
-
+.news{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  position:relative;
+}
 .card{
   flex-grow: 1;
-  max-width: 44vw;
-  margin:1vw;
+  max-width: 48vw;
+  margin:0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
