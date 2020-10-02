@@ -8,7 +8,7 @@ a{
 }
 
 
-/* CSS NAVBAR & OSBURGER */
+/*     CSS NAVBAR & OSBURGER     */
 
 header h1{
   flex-grow: 1;
@@ -20,14 +20,26 @@ header h1{
   display:inline-block;
 }
 .icon-menu:before {
-  content: "";
   height:50px;
   width:auto;
 }
-.icon-cross:before {
-  transform-origin : center center;
-  transform: rotate(90deg);
+
+/* anim osburger */
+@keyframes osmove{
+  0%{rotate: 2deg;}
+  100%{rotate: -3deg;}
 }
+.icon-menu img:hover {
+  transform-origin : center center;
+  animation-name: osmove;
+  animation-duration: 0.05s;
+  animation-iteration-count: 5;
+  animation-direction: alternate;
+  animation-fill-mode:backwards;
+}
+/* ------------ */
+
+
 
 .navbar .logo{
   max-height:2.9em;
@@ -43,10 +55,10 @@ header h1{
   font-size:1.1em;
 }
 
+
 .navbar ul {
   max-height: 0;
   width:100%;
-  transition: max-height 0.3s;
   position: fixed;
   background: hsla(192, 57%, 20%, 0.849);
   top: 3.9em;
@@ -73,9 +85,18 @@ header h1{
   display: none;
 }
 
-.navbar input[type="checkbox"]:checked ~ ul {
-  max-height: 100vh;
+/* anim osburger menu deployed */
+@keyframes osburgerdeployed{
+  0%{max-height: 0;}
+  100%{max-height: 100vh;}
 }
+
+.navbar input[type="checkbox"]:checked ~ ul {
+  animation-name: osburgerdeployed;
+  animation-duration: 3s;
+  animation-fill-mode:both;
+}
+/* ----------------------- */
 
 .navbar input[type="checkbox"] + label span[class^="icon-"] {
   display: none;
@@ -94,10 +115,11 @@ header h1{
   display: inline-block;
 }
 
-/* END CSS NAVBAR & OSBURGER*/
+/*     END CSS NAVBAR & OSBURGER    */
 
 
-/* FOOTER */
+
+/*  FOOTER  */
 
 body > footer{
   position:fixed;
@@ -115,7 +137,7 @@ body > footer p{
 footer a{
   color:#fff;
 }
-/* ======= */
+/* END FOOTER */
 
 
 /* BREACK POINT 1 */
@@ -172,6 +194,7 @@ h1 a,
 
 body > header{
   display: flex;
+  justify-content:space-between;
   padding: 20px;
   align-items: center;
 }
