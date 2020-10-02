@@ -3,6 +3,164 @@ body{
   color:#fff;
   font-family: 'Arvo', serif;
 }
+a{
+  text-decoration:none;
+}
+
+
+/* CSS NAVBAR & OSBURGER */
+
+header h1{
+  flex-grow: 1;
+  font-size:1.9em;
+  z-index:25;
+}
+
+.icon-menu{
+  display:inline-block;
+}
+.icon-menu:before {
+  content: "";
+  height:50px;
+  width:auto;
+}
+.icon-cross:before {
+  transform-origin : center center;
+  transform: rotate(90deg);
+}
+
+.navbar .logo{
+  max-height:2.9em;
+  padding:0.1em;
+}
+.navbar {
+  position: relative;
+  display: flex;
+  color: #ccc;
+  height: 2.9em;
+  align-items: center;
+  padding: 0.5em;
+  font-size:1.1em;
+}
+
+.navbar ul {
+  max-height: 0;
+  width:100%;
+  transition: max-height 0.3s;
+  position: fixed;
+  background: hsla(192, 57%, 20%, 0.849);
+  top: 3.9em;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  z-index:20;
+}
+
+.navbar ul li {
+  list-style-type: none;
+  text-align:center;
+}
+
+.navbar a {
+  display: inline-block;
+  color: #eee;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+
+.navbar input[type="checkbox"] {
+  display: none;
+}
+
+.navbar input[type="checkbox"]:checked ~ ul {
+  max-height: 100vh;
+}
+
+.navbar input[type="checkbox"] + label span[class^="icon-"] {
+  display: none;
+  font-size:2em;
+}
+
+.navbar input[type="checkbox"]:not(:checked) + label .icon-menu {
+  display: inline;
+}
+
+.navbar input[type="checkbox"]:checked + label .icon-cross {
+  display: inline;
+}
+
+.navbar span {
+  display: inline-block;
+}
+
+/* END CSS NAVBAR & OSBURGER*/
+
+
+/* FOOTER */
+
+body > footer{
+  position:fixed;
+  text-align:center;
+  width:100%;
+  height:40px;
+  bottom:0;
+  background-color:#164450;
+}
+body > footer p{
+  position:relative;
+  top:10px;
+  font-size:1em;
+}
+footer a{
+  color:#fff;
+}
+/* ======= */
+
+
+/* BREACK POINT 1 */
+@media screen and (min-width:720px){
+    .navbar label{
+      display: none;
+    }
+    .navbar .logo{
+      flex-direction:row;
+    }
+    .navbar, .navbar ul{
+      display:flex;
+    }
+    .navbar ul{
+      width:100%;
+      top:auto;
+      max-height:none;
+      background:none;
+      justify-content:flex-end;
+    }
+    
+    header h1 a{
+      flex-grow: 0;
+    }
+    .navbar {
+      font-size:0.8em;
+    }
+
+}
+/* ============ */
+
+/* BREACK POINT 2 */
+@media screen and (min-width:966px){
+  .navbar ul li{
+    padding: 0 1vw;
+  }
+  .navbar {
+    font-size:1em;
+  }
+  body > footer{
+    position:relative;}
+}
+/* ============ */
+
+
 
 h1 a,
 .card .categorie {
