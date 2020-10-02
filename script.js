@@ -1,6 +1,6 @@
 const message = 
 
-"Thank you for submitting your request."; 
+"Merci pour votre message, on va vous envoyer un missile au plus vite."; 
 
 document 
 
