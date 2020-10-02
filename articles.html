@@ -29,12 +29,20 @@
 <article class="article">
 
   <header>
-    <h2>{{headline}}</h2>
-    <h3>{{chapo}}</h3>
+    <h2>
+      {{headline}}
+    </h2>
+    <h3 class="chapo">
+      {{chapo}}
+    </h3>
     <p class="date-created">
-      <time datetime="{{dateCreatedISO}}">{{dateCreatedText}}</time>
+      <time datetime="{{dateCreatedISO}}">
+        {{dateCreatedText}}
+      </time>
     </p>
-    <p class="author-name">{{authorName}}</p>
+    <p class="author-name">
+      {{authorName}
+    }</p>
     <picture>
       <source media="(min-width: 720px)" srcset="{{image[0].tablet.url}}" />
       <source media="(min-width: 1280px)" srcset="{{image[0].desktop.url}}" />
@@ -52,6 +60,74 @@
     </section>
     <section class="author-presentation">
       {{authorPresentation}}
+    </section>
+    <section class="related">
+      <header>
+        <h2>À lire ensuite</h2>
+      </header>
+      <div>
+        <!-- Insert Card -->
+        <article class="card">
+          <h2>{{related[0].headline}}</h2>
+          <h3 class="chapo">{{related[0].chapo}}
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et architecto eveniet, dolorum dolor ipsam
+            voluptate laudantium cum quisquam amet ut, aliquid hic qui error animi quis deserunt? Ullam, praesentium
+            vel!
+          </h3>
+          <p class="date-created">
+            <time datetime="{{related[0].dateCreatedISO}}">{{related[0].dateCreatedText}}</time>
+          </p>
+          <p class="author-name">{{related[0].authorName}}</p>
+          <picture>
+            <!--<source media="(min-width: 720px)" srcset="{{related[0].image[0].tablet.url}}" />
+          <source media="(min-width: 1280px)" srcset="{{related[0].image[0].desktop.url}}" />
+          <img src="{{related[0].image[0].mobile.url}}" alt="{{related[0].image[0].description}}" /> -->
+            <img src="https://clovis.gauzy.fr/realisations/20180824_miss-trash.webp"
+              alt="{{related[0].image[0].description}}" />
+          </picture>
+        </article>
+
+        <article class="card">
+          <h2>{{related[1].headline}}</h2>
+          <h3 class="chapo">{{related[1].chapo}}
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et architecto eveniet, dolorum dolor ipsam
+            voluptate laudantium cum quisquam amet ut, aliquid hic qui error animi quis deserunt? Ullam, praesentium
+            vel!
+          </h3>
+          <p class="date-created">
+            <time datetime="{{related[1].dateCreatedISO}}">{{related[1].dateCreatedText}}</time>
+          </p>
+          <p class="author-name">{{related[1].authorName}}</p>
+          <picture>
+            <!--<source media="(min-width: 720px)" srcset="{{related[1].image[0].tablet.url}}" />
+          <source media="(min-width: 1280px)" srcset="{{related[1].image[0].desktop.url}}" />
+          <img src="{{related[1].image[0].mobile.url}}" alt="{{related[1].image[0].description}}" /> -->
+            <img src="https://clovis.gauzy.fr/realisations/20180824_miss-trash.webp"
+              alt="{{related[1].image[0].description}}" />
+          </picture>
+        </article>
+
+        <article class="card">
+          <h2>{{related[2].headline}}</h2>
+          <h3 class="chapo">{{related[2].chapo}}
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et architecto eveniet, dolorum dolor ipsam
+            voluptate laudantium cum quisquam amet ut, aliquid hic qui error animi quis deserunt? Ullam, praesentium
+            vel!
+          </h3>
+          <p class="date-created">
+            <time datetime="{{related[2].dateCreatedISO}}">{{related[2].dateCreatedText}}</time>
+          </p>
+          <p class="author-name">{{related[2].authorName}}</p>
+          <picture>
+            <!--<source media="(min-width: 720px)" srcset="{{related[2].image[0].tablet.url}}" />
+          <source media="(min-width: 1280px)" srcset="{{related[2].image[0].desktop.url}}" />
+          <img src="{{related[2].image[0].mobile.url}}" alt="{{related[2].image[0].description}}" /> -->
+            <img src="https://clovis.gauzy.fr/realisations/20180824_miss-trash.webp"
+              alt="{{related[2].image[0].description}}" />
+          </picture>
+        </article>
+        <!-- End Card -->
+      </div>
     </section>
   </footer>
 
