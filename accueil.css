@@ -1,7 +1,7 @@
 
 body{
   background-color:#3F4B6A;
-  margin:0px;
+  margin:0;
 }
 header{
   display: flex;
@@ -54,14 +54,10 @@ p{
   
 }
 
-a{
-  margin: 0;
-  text-decoration: none;
 
-}
 
 .card-title{
-  margin: 0px;
+  margin: 0;
  
   border-radius: 8px;
   
@@ -69,7 +65,7 @@ a{
 }
 .card-date{
   color: #3D2D3E;
-  margin: 0px;
+  margin: 0;
   
   border-radius: 8px;
   
