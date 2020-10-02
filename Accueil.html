@@ -1,103 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zombi-project</title>
     <meta name="author" content="Miguel, Clovis, Valérie, Maxime">
+    <link href="https://gauzy.fr/css/_reset.css" rel="stylesheet">
     <link rel="stylesheet" href ="./accueil.css">
     <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
     <link href="https://gauzy.fr/fonts/Adler.css" rel="stylesheet">
-</head>
+    
+  </head>
 <body>
 
 <header>
-    <h1><a class="home-link" href="#" title="Retour à la page d'accueil" ><span>Zombitrip.com</span></a></h1>
+  <h1><a class="home-link" href="#" title="Retour à la page d'accueil" ><span>Zombitrip.com</span></a></h1>
 </header>
 
 <section id="actualites">
 
   <article class="card">
-    <h2>{{related[1].headline}}</h2>
-    <h3 class="chapo">{{related[1].chapo}}
+    <h2>{{news[0].headline}}</h2>
+    <h3 class="chapo">{{news[0].chapo}}
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et architecto eveniet, dolorum dolor ipsam
       voluptate laudantium cum quisquam amet ut, aliquid hic qui error animi quis deserunt? Ullam, praesentium
       vel!
     </h3>
-    <p class="categorie">{{related[2].categorie}}</p>
+    <p class="categorie">{{news[0].categorie}}</p>
     <p class="date-created">
-      <time datetime="{{related[1].dateCreatedISO}}">{{related[1].dateCreatedText}}</time>
+      <time datetime="{{news[0].dateCreatedISO}}">{{news[0].dateCreatedText}}</time>
     </p>
-    <p class="author-name">{{related[1].authorName}}</p>
+    <p class="author-name">{{news[0].authorName}}</p>
     <picture>
-      <!--<source media="(min-width: 720px)" srcset="{{related[1].image[0].tablet.url}}" />
-    <source media="(min-width: 1280px)" srcset="{{related[1].image[0].desktop.url}}" />
-    <img src="{{related[1].image[0].mobile.url}}" alt="{{related[1].image[0].description}}" /> -->
+      <!--<source media="(min-width: 720px)" srcset="{{news[0].image[0].tablet.url}}" />
+    <source media="(min-width: 1280px)" srcset="{{news[0].image[0].desktop.url}}" />
+    <img src="{{news[0].image[0].mobile.url}}" alt="{{news[0].image[0].description}}" /> -->
       <img src="https://clovis.gauzy.fr/realisations/20180824_miss-trash.webp"
-        alt="{{related[1].image[0].description}}" />
+        alt="{{news[0].image[0].description}}" />
     </picture>
   </article>
 
   <article class="card">
-    <h2>{{related[2].headline}}</h2>
-    <h3 class="chapo">{{related[2].chapo}}
+    <h2>{{news[1].headline}}</h2>
+    <h3 class="chapo">{{news[1].chapo}}
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et architecto eveniet, dolorum dolor ipsam
       voluptate laudantium cum quisquam amet ut, aliquid hic qui error animi quis deserunt? Ullam, praesentium
       vel!
     </h3>
-    <p class="categorie">{{related[2].categorie}}</p>
+    <p class="categorie">{{news[1].categorie}}</p>
     <p class="date-created">
-      <time datetime="{{related[2].dateCreatedISO}}">{{related[2].dateCreatedText}}</time>
+      <time datetime="{{news[1].dateCreatedISO}}">{{news[1].dateCreatedText}}</time>
     </p>
-    <p class="author-name">{{related[2].authorName}}</p>
+    <p class="author-name">{{news[1].authorName}}</p>
     <picture>
-      <!--<source media="(min-width: 720px)" srcset="{{related[2].image[0].tablet.url}}" />
-    <source media="(min-width: 1280px)" srcset="{{related[2].image[0].desktop.url}}" />
-    <img src="{{related[2].image[0].mobile.url}}" alt="{{related[2].image[0].description}}" /> -->
+      <!--<source media="(min-width: 720px)" srcset="{{news[1].image[0].tablet.url}}" />
+    <source media="(min-width: 1280px)" srcset="{{news[1].image[0].desktop.url}}" />
+    <img src="{{news[1].image[0].mobile.url}}" alt="{{news[1].image[0].description}}" /> -->
       <img src="https://clovis.gauzy.fr/realisations/20180824_miss-trash.webp"
-        alt="{{related[2].image[0].description}}" />
+        alt="{{news[1].image[0].description}}" />
     </picture>
   </article>
 
   <article class="card">
-    <h2>{{related[3].headline }}</h2>
-    <h3 class="chapo">{{related[3].chapo}}
+    <h2>{{news[2].headline }}</h2>
+    <h3 class="chapo">{{news[2].chapo}}
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et architecto eveniet, dolorum dolor ipsam
       voluptate laudantium cum quisquam amet ut, aliquid hic qui error animi quis deserunt? Ullam, praesentium
       vel!
     </h3>
-    <p class="categorie">{{related[2].categorie}}</p>
+    <p class="categorie">{{news[2].categorie}}</p>
     <p class="date-created">
-      <time datetime="{{related[1].dateCreatedISO}}">{{related[3].dateCreatedText}}</time>
+      <time datetime="{{news[2].dateCreatedISO}}">{{news[2].dateCreatedText}}</time>
     </p>
-    <p class="author-name">{{related[3].authorName}}</p>
+    <p class="author-name">{{news[2].authorName}}</p>
     <picture>
-      <!--<source media="(min-width: 720px)" srcset="{{related[3].image[0].tablet.url}}" />
-    <source media="(min-width: 1280px)" srcset="{{related[3].image[0].desktop.url}}" />
-    <img src="{{related[3].image[0].mobile.url}}" alt="{{related[3].image[0].description}}" /> -->
+      <!--<source media="(min-width: 720px)" srcset="{{news[2].image[0].tablet.url}}" />
+    <source media="(min-width: 1280px)" srcset="{{news[2].image[0].desktop.url}}" />
+    <img src="{{news[2].image[0].mobile.url}}" alt="{{news[2].image[0].description}}" /> -->
       <img src="https://clovis.gauzy.fr/realisations/20180824_miss-trash.webp"
-        alt="{{related[3].image[0].description}}" />
+        alt="{{news[2].image[0].description}}" />
     </picture>
   </article>
 
   <article class="card">
-    <h2>{{related[4].headline}}</h2>
-    <h3 class="chapo">{{related[4].chapo}}
+    <h2>{{news[3].headline}}</h2>
+    <h3 class="chapo">{{news[3].chapo}}
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et architecto eveniet, dolorum dolor ipsam
       voluptate laudantium cum quisquam amet ut, aliquid hic qui error animi quis deserunt? Ullam, praesentium
       vel!
     </h3>
-    <p class="categorie">{{related[2].categorie}}</p>
+    <p class="categorie">{{news[3].categorie}}</p>
     <p class="date-created">
-      <time datetime="{{related[4].dateCreatedISO}}">{{related[4].dateCreatedText}}</time>
+      <time datetime="{{news[3].dateCreatedISO}}">{{news[3].dateCreatedText}}</time>
     </p>
-    <p class="author-name">{{related[4].authorName}}</p>
+    <p class="author-name">{{news[3].authorName}}</p>
     <picture>
-      <!--<source media="(min-width: 720px)" srcset="{{related[4].image[0].tablet.url}}" />
-    <source media="(min-width: 1280px)" srcset="{{related[4].image[0].desktop.url}}" />
-    <img src="{{related[4].image[0].mobile.url}}" alt="{{related[4].image[0].description}}" /> -->
+      <!--<source media="(min-width: 720px)" srcset="{{news[3].image[0].tablet.url}}" />
+    <source media="(min-width: 1280px)" srcset="{{news[3].image[0].desktop.url}}" />
+    <img src="{{news[3].image[0].mobile.url}}" alt="{{news[3].image[0].description}}" /> -->
       <img src="https://clovis.gauzy.fr/realisations/20180824_miss-trash.webp"
-        alt="{{related[4].image[0].description}}" />
+        alt="{{news[3].image[0].description}}" />
     </picture>
   </article>
 
