@@ -129,6 +129,7 @@ footer a{
     .navbar, .navbar ul{
       display:flex;
     }
+
     .navbar ul{
       width:100%;
       top:auto;
@@ -137,8 +138,8 @@ footer a{
       justify-content:flex-end;
     }
     
-    header h1 a{
-      flex-grow: 0;
+    header h1{
+      flex-grow: initial;
     }
     .navbar {
       font-size:0.8em;
