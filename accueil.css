@@ -427,18 +427,24 @@ header{
   
 }
 
-h2{
-  width: 100%;
-
+article h2{
+  width: 80%;
+  margin-top: 10%;
+  font-size: calc(1em + .5vw);
+  font-size: smaller;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  
+  
+  
 }
 
 picture img{
   width: 100%;
 }
 
-p{
-  margin:0;
-}
+
 
 
 
