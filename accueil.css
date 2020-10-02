@@ -1,25 +1,25 @@
 
 body{
-  background-color:#F8F9F8;
+  background-color:#3F4B6A;
   margin:0px;
 }
 header{
   display: flex;
   padding: 20px;
   align-items: center;
-  background-color: #F2C577 ;
+ 
 
 }
-
-#actualites img
+#actualites{
+  background-color: #F7FAF9 ;
+}
+.actu-image img
 {
-  width: 100%;
+  height: 200px;
+ width: 100%; 
+  
 }
 
-{
-  100%;
-
-}
 
 
 .article{
@@ -28,44 +28,63 @@ header{
   justify-content: center;
   flex-wrap: wrap;
   
+  
+  
+  
 }
 
 .card{
-  border-radius: 10px;
-  width: 210px;
-  margin: 20px;
+  
+  width: 33%;
+  height: 25%;
+  margin: 4%;
   display: flex;
   flex-direction: column;
-  background-color:#976B69;
+  background-color: #F7FAF9;
+  border-radius: 10px;
   
 }
-.card-body {
-  padding: 10px 20px;
+
+
+
+p{
+  margin:0;
+
+  
   
 }
 
 a{
-  margin: 10px 0px;
+  margin: 0;
   text-decoration: none;
 
 }
+
+.card-title{
+  margin: 0px;
+ 
+  border-radius: 8px;
+  
+  
+}
 .card-date{
   color: #3D2D3E;
+  margin: 0px;
+  
+  border-radius: 8px;
   
 }
 
 .card-abstract{
-  margin-top:none;
+  
   color: #3D2D3E;
-
+  
 }
 
 
 .card-image img{
   display: inline-block;
-  border-radius: 8px;
-  background-size: cover;
-  background-position: center;
-  height: 200px;
-  width : 200px;
+
+  height: 50%;
+  width : 100%;
 }
