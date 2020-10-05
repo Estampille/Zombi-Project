@@ -217,7 +217,8 @@ body > header{
   z-index: -1;
 } */
 
-#actualites {
+#actualites,
+#related > div {
   display: grid;
   grid-template: auto / 1fr 1fr;
   grid-gap: 2vh 2vw;
@@ -307,3 +308,98 @@ article h2{
   }
   
 } */
+
+
+.article {
+  /* context needed */
+}
+
+.article > header {
+  text-align: center;
+}
+
+.article > header h2 {
+  font-size: 2em;
+}
+
+.chapo {
+  font-size: 1.1em;  
+  font-weight: 500;
+}
+
+.date-created,
+.author-name {
+  display: inline-block;
+}
+
+.content,
+.article > footer > section {
+  margin: 5vh 5vw;
+}
+
+.content p {
+  margin: .8em 0;
+  text-align: justify;
+  hyphens: auto;
+  line-height: 1.3;
+}
+
+.content em {
+  font-style: normal;
+  font-weight: 500;
+}
+
+.content strong {
+  font-style: normal;  
+  font-weight: 500; 
+}
+
+picture {
+  display: block;
+}
+
+picture img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+figure {
+  margin: 0;
+}
+figure img {
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.author-presentation {
+  border-radius: .5em;
+  padding: 1em;
+  background-color: #2e4450;
+  box-shadow: .2em .2em .25em hsla(0, 0%, 0%, .25);
+}
+
+.related {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.related .card {
+  flex-grow: 1;
+}
+
+@media screen and (min-width: 720px) {
+  picture img {
+    height: 40vw;
+  }
+  figure {
+    float: left;
+    margin: 0 1em .25em 0;
+  }
+  figure:nth-of-type(2n) {
+    float: right;
+    margin: 0 0 .25em 1em;
+  }
+  .article > footer {
+    clear: both;
+  }
+}
