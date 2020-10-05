@@ -145,6 +145,9 @@ footer a{
     .navbar label{
       display: none;
     }
+    .navbar ul{
+      position:relative;
+    }
     .navbar .logo{
       flex-direction:row;
     }
