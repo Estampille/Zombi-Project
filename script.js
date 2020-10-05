@@ -1,6 +1,6 @@
 const message = 
 
-"Merci pour votre message, on va vous envoyer un missile par la post au plus vite."; 
+"Merci pour votre message, on va vous envoyer un missile par La Poste au plus vite."; 
 
 document 
 
