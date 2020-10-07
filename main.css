@@ -342,6 +342,11 @@ article h2{
   line-height: 1.25;
 }
 
+.content h4 {
+  font-size: 1.25em;
+  margin: 1em 0 .25em;
+}
+
 .content em {
   font-style: normal;
   font-weight: 500;
