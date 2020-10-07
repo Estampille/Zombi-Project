@@ -409,6 +409,9 @@ figure img {
 
 
 /*CATEGORIES*/
+#categories h2 {
+  margin-bottom:0.8em;
+}
 #categories .card h3{
   display: inline-block;
 }
@@ -438,7 +441,6 @@ figure img {
     width:47%;
     margin:1%;
   }
-
 }
 
 /* CATEGORIES BREACK POINT 2 */
@@ -448,5 +450,14 @@ figure img {
   }
   #categories .chapo, #categories .date-created{
     display: inline-block;
+  }
+  #categories .card h3{
+    position: relative;
+    top: 240px;
+    text-shadow: 0 0 0.2em #000, 0 0 0.2em #000, 0 0 0.2em #000;
+    left: 5%;
+    width:90%;
+    height:0;
+    top:170px;
   }
 }
