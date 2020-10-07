@@ -423,3 +423,10 @@ figure img {
     margin:1%;
   }
 }
+
+/* CATEGORIES BREACK POINT 2 */
+@media screen and (min-width:966px){
+  #categories img {
+    max-height:30vh;
+  }
+}
