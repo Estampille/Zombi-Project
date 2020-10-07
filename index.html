@@ -46,23 +46,22 @@
 <section id="actualites">
 
   <article class="card">
-    <h2>{{news[0].headline}}</h2>
-    <h3 class="chapo">{{news[0].chapo}}
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et architecto eveniet, dolorum dolor ipsam
-      voluptate laudantium cum quisquam amet ut, aliquid hic qui error animi quis deserunt? Ullam, praesentium
-      vel!
+    <h2>
+      Les hordes de l'Ouest se noient dans l'océan
+    </h2>
+    <h3 class="chapo">
+      Le bruit des vagues aidant, les Bretons seront bientôt débarassés d'une autre vague... celle des zombies.
     </h3>
     <p class="categorie">{{news[0].categorie}}</p>
     <p class="date-created">
-      <time datetime="{{news[0].dateCreatedISO}}">{{news[0].dateCreatedText}}</time>
+      <time datetime="2052-10-06T11:44:38.242Z">
+        6 octobre 2020
+      </time>
     </p>
-    <p class="author-name">{{news[0].authorName}}</p>
+    <p class="author-name">
+      {{authorName}}</p>
     <picture>
-      <!--<source media="(min-width: 720px)" srcset="{{news[0].image[0].tablet.url}}" />
-    <source media="(min-width: 1280px)" srcset="{{news[0].image[0].desktop.url}}" />
-    <img src="{{news[0].image[0].mobile.url}}" alt="{{news[0].image[0].description}}" /> -->
-      <img src="https://clovis.gauzy.fr/realisations/20170924_Minicus.webp"
-        alt="{{news[0].image[0].description}}" />
+      <img src="/img/" alt="{{image[0].description}}" />
     </picture>
   </article>
 
@@ -88,65 +87,25 @@
   </article>
 
   <article class="card">
-    <h2>{{news[2].headline }}</h2>
-    <h3 class="chapo">{{news[2].chapo}}
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et architecto eveniet, dolorum dolor ipsam
-      voluptate laudantium cum quisquam amet ut, aliquid hic qui error animi quis deserunt? Ullam, praesentium
-      vel!
+    <h2>
+      Rats ou pigeons : quel élevage choisir ?
+    </h2>
+    <h3 class="chapo">
+      L’hiver arrive et le gibier se fait rare… Il est grand temps de commencer un élevage, si vous ne l’avez pas déjà fait !
     </h3>
     <p class="categorie">{{news[2].categorie}}</p>
     <p class="date-created">
-      <time datetime="{{news[2].dateCreatedISO}}">{{news[2].dateCreatedText}}</time>
+      <time datetime="2052-10-05T09:59:23.312Z">
+        5 octobre 2052
+      </time>
     </p>
-    <p class="author-name">{{news[2].authorName}}</p>
-    <picture>
-      <!--<source media="(min-width: 720px)" srcset="{{news[2].image[0].tablet.url}}" />
-    <source media="(min-width: 1280px)" srcset="{{news[2].image[0].desktop.url}}" />
-    <img src="{{news[2].image[0].mobile.url}}" alt="{{news[2].image[0].description}}" /> -->
-      <img src="https://clovis.gauzy.fr/realisations/A-Wa.webp"
-        alt="{{news[2].image[0].description}}" />
-    </picture>
-  </article>
-
-  <article class="card">
-    <h2>{{news[3].headline}}</h2>
-    <h3 class="chapo">{{news[3].chapo}}
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et architecto eveniet, dolorum dolor ipsam
-      voluptate laudantium cum quisquam amet ut, aliquid hic qui error animi quis deserunt? Ullam, praesentium
-      vel!
-    </h3>
-    <p class="categorie">{{news[3].categorie}}</p>
-    <p class="date-created">
-      <time datetime="{{news[3].dateCreatedISO}}">{{news[3].dateCreatedText}}</time>
+    <p class="author-name">
+      {{authorName}}
     </p>
-    <p class="author-name">{{news[3].authorName}}</p>
     <picture>
-      <!--<source media="(min-width: 720px)" srcset="{{news[3].image[0].tablet.url}}" />
-    <source media="(min-width: 1280px)" srcset="{{news[3].image[0].desktop.url}}" />
-    <img src="{{news[3].image[0].mobile.url}}" alt="{{news[3].image[0].description}}" /> -->
-      <img src="https://clovis.gauzy.fr/realisations/8271-coupe-de-france-maif-a-laviron-2011-photo-Clovis-Gauzy.webp"
-        alt="{{news[3].image[0].description}}" />
-    </picture>
-  </article>
-
-  <article class="card">
-    <h2>{{news[4].headline}}</h2>
-    <h3 class="chapo">{{news[4].chapo}}
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et architecto eveniet, dolorum dolor ipsam
-      voluptate laudantium cum quisquam amet ut, aliquid hic qui error animi quis deserunt? Ullam, praesentium
-      vel!
-    </h3>
-    <p class="categorie">{{news[4].categorie}}</p>
-    <p class="date-created">
-      <time datetime="{{news[4].dateCreatedISO}}">{{news[4].dateCreatedText}}</time>
-    </p>
-    <p class="author-name">{{news[4].authorName}}</p>
-    <picture>
-      <!--<source media="(min-width: 720px)" srcset="{{news[4].image[0].tablet.url}}" />
-    <source media="(min-width: 1280px)" srcset="{{news[4].image[0].desktop.url}}" />
-    <img src="{{news[4].image[0].mobile.url}}" alt="{{news[4].image[0].description}}" /> -->
-      <img src="https://clovis.gauzy.fr/realisations/20170226_Orphonus-NoMad.webp"
-        alt="{{news[4].image[0].description}}" />
+      <source media="(min-width: 720px)" srcset="{{image[0].tablet.url}}" />
+      <source media="(min-width: 1280px)" srcset="{{image[0].desktop.url}}" />
+      <img src="{{image[0].mobile.url}}" alt="{{image[0].description}}" />
     </picture>
   </article>
 
