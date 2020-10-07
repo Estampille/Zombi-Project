@@ -409,7 +409,11 @@ figure img {
 }
 
 
-/*CATEGORIES*/
+/* CATEGORIES */
+#categories{
+  max-width:95%;
+  margin:auto;
+}
 #categories h2 {
   margin-bottom:0.8em;
 }
@@ -418,12 +422,16 @@ figure img {
 }
 #categories .card h3{
   font-size:2em;
+  z-index: 30;
 }
 #categories .author-name{
-  text-align:right;
+  display:none;
 }
 #categories .card {
   margin-bottom:2em;
+}
+#categories .card > .bloc-article {
+  position:relative;
 }
 #categories h3{
   font-family: 'Arvo', serif;
@@ -431,10 +439,38 @@ figure img {
 #categories .card:last-child {
   margin-bottom: 5em;
 }
+#categories .bouton-article{
+  background-color: #164450;
+  padding:1.8% 4.5%;
+  position:absolute;
+  bottom:1em;
+  right:1em;
+  font-size:1.3em;
+}
+.lire-article{
+  display:none;
+}
+.lire-article-mobile{
+  display: block;
+  text-align: center;
+  font-size: 2em;
+  top: -62px;
+  position: relative;
+  background-color: #164450;
+  padding: 2% 6%;
+  margin: 0 auto;
+  width: 60%;
+}
+
+
+/* à supprimer ? garder certains style pour les breack-points ?*/
 
 
 /* CATEGORIES BREACK POINT 1 */
 @media screen and (min-width:720px){
+  #categories{
+    max-width:100%;
+  }
   #categories {
     display:flex;
     flex-wrap:wrap;
@@ -444,10 +480,19 @@ figure img {
   }
   #categories .card{
     width:47%;
-    margin:1%;
+    margin:1.5%;
+  }
+  #categories .card > .bloc-article {
+    top:0;
+  }
+  #categories .bouton-article{
+    bottom:3em;
   }
   #categories .card:nth-last-child(2) {
     margin-bottom: 5em;
+  }
+  .lire-article-mobile{
+
   }
 }
 
@@ -458,13 +503,38 @@ figure img {
   }
   #categories .chapo, #categories .date-created{
     display: inline-block;
+    margin-bottom: 1em;
+  }
+  #categories .chapo:after{
+    content:" (...)";
   }
   #categories .card h3{
-    position: relative;
+    position: absolute;
     text-shadow: 0 0 0.2em #000, 0 0 0.2em #000, 0 0 0.2em #000;
     left: 5%;
     width:90%;
-    height:0;
-    top:170px;
+    bottom:35%;
   }
+  .lire-article{
+    padding:1.1% 4.5%;
+    margin:0;
+    background-color: #164450;
+    font-size: 0.4em;
+    font-variant: normal;
+    text-align: center;
+    text-shadow:none;
+    display:inline;
+    position:relative;
+    bottom:0.5em;
+    left:1em;
+  }
+
+  .lire-article-mobile{
+    display:none;
+  }
+  #categories .author-name{
+    display:inline-block;
+    text-align:right;
+  }
+
 }
