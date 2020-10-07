@@ -5,6 +5,7 @@ body{
 }
 a{
   text-decoration:none;
+  color: #fff;
 }
 blockquote {
   font-style: italic;
@@ -427,6 +428,10 @@ figure img {
 #categories h3{
   font-family: 'Arvo', serif;
 }
+#categories .card:last-child {
+  margin-bottom: 5em;
+}
+
 
 /* CATEGORIES BREACK POINT 1 */
 @media screen and (min-width:720px){
@@ -441,6 +446,9 @@ figure img {
     width:47%;
     margin:1%;
   }
+  #categories .card:nth-last-child(2) {
+    margin-bottom: 5em;
+  }
 }
 
 /* CATEGORIES BREACK POINT 2 */
@@ -453,7 +461,6 @@ figure img {
   }
   #categories .card h3{
     position: relative;
-    top: 240px;
     text-shadow: 0 0 0.2em #000, 0 0 0.2em #000, 0 0 0.2em #000;
     left: 5%;
     width:90%;
