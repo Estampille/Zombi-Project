@@ -401,3 +401,63 @@ figure img {
     clear: both;
   }
 }
+
+/* css contact form  */
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #461202;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+input[type=submit]:hover {
+  background-color: #bebebe;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #2e4450;
+  ;
+  padding: 20px;
+}
+
+@media screen and (min-width:720px) {
+  input {
+   
+    width: 10%;
+  }
+
+  .inlineP {
+    display: flex;
+    justify-content: space-between;
+
+
+  }
+
+  .inlineP p {
+
+    width: 48%;
+
+
+  }
+}

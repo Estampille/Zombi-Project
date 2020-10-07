@@ -1,3 +1,4 @@
+
 body {
   background-color: #164450;
   font-family: 'Arvo', serif;
@@ -12,10 +13,10 @@ h2 {
   text-align: center;
 }
 
-
 input[type=text],
 select,
 textarea {
+  background-color: white;
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -52,6 +53,7 @@ input[type=submit]:hover {
 
 @media screen and (min-width:720px) {
   input {
+   
     width: 10%;
   }
 

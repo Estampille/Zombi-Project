@@ -8,37 +8,59 @@
 
   <title> Post apocalyptique </title>
 
-  <meta charset="utf-8" />
-
-  <meta name="viewport" content="width=device-width" />
-
-  <meta name="description" content="Project post apocalyptique" />
-
-  <meta name="author" content="" />
-
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="https://gauzy.fr/fonts/Adler.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Miguel, Clovis, Valérie, Maxime">
+  <link href="https://gauzy.fr/css/_reset.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
-
-
+  <link href="https://gauzy.fr/fonts/Adler.css" rel="stylesheet">
+  <link rel="stylesheet" href ="./main.css">
 </head>
 
 <body>
+  <header>
+    <h1><a href="/" title="Retour à la page d'accueil" ><span>Zombitrip.com</span></a></h1>
+  
+    <nav class="navbar">
+      <input id="menu-toggle" class="menu-toggle" type="checkbox" />
+      <label for="menu-toggle">
+        <span class="icon-menu"><img src='https://gauzy.fr/osburger.svg' height='40' width='40'/></span>
+        <span class="icon-cross"><img src='https://gauzy.fr/osburger.svg' height='40' width='40'/></span>
+      </label>
+      <ul>
+        <li>
+          <a href="/actualites" title="Actualités">Actualités</a>
+        </li>
+        <li>
+          <a href="/animation" title="Animation">Animation</a>
+        </li>
+        <li>
+          <a href="/vie-sociale" title="Vie sociale">Vie sociale</a>
+        </li>
+        <li>
+          <a href="/bricolage" title="Bricolage">Bricolage</a>
+        </li>
+        <li>
+          <a href="/survie" title="Survie">Survie</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
   <h2>Contact Us</h2>
   <div class="container">
 
     <form id="contactForm">
       <div class="inlineP">
-      <p>
-        <label for="fname">Prénom :</label>
-        <input type="text" id="fname" name="firstname" placeholder="Votre prénom...">
-      </p>
-      <p>
-        <label for="lname">Nom :</label>
-        <input type="text" id="lname" name="lastname" placeholder="Votre nom...">
-      </p>
-      </div>  
+        <p>
+          <label for="fname">Prénom :</label>
+          <input type="text" id="fname" name="firstname" placeholder="Votre prénom...">
+        </p>
+        <p>
+          <label for="lname">Nom :</label>
+          <input type="text" id="lname" name="lastname" placeholder="Votre nom...">
+        </p>
+      </div>
       <p>
         <label for="adresse">Votre adresse :</label>
         <input type="text" id="adresse" name="adresse" placeholder="Adresse...">
@@ -47,7 +69,8 @@
         <label for="Warning">Help!!</label>
         <select id="Warning" name="Warning">
           <option value="warning1">Help! Mon Zombie est enseinte!</option>
-          <option value="warning2">Mais voisins Zombies c'est comme les lapins ils se reproduisent à la vitesse lumiere!</option>
+          <option value="warning2">Mais voisins Zombies c'est comme les lapins ils se reproduisent à la vitesse lumiere!
+          </option>
           <option value="warning3">Au secours!!Je suis cerné par les Zombies!!</option>
         </select>
       </p>
@@ -62,11 +85,14 @@
     </form>
   </div>
 
- 
-  
+
+  <footer>
+    <p><a href="/contact" title="A propos / Nous contacter">Qui sommes-nous / Contact</a></p>
+  </footer>
+      
 
 
-  <script src="script.js"></script>
+  <script src="contact.js"></script>
 
 </body>
 
