@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Le bruit des vagues aidant, les Bretons seront bientôt débarassés d'une autre vague... celle des zombies.">
+    <title>Les hordes de l'Ouest se noient dans l'océan</title>
+    <meta name="author" content="Miguel, Clovis, Valérie, Maxime">
+    <link href="https://gauzy.fr/css/_reset.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link href="https://gauzy.fr/fonts/Adler.css" rel="stylesheet">
+    <link rel="stylesheet" href ="./main.css">
+  </head>
+<body>
+
+<header>
+  <h1><a href="/" title="Retour à la page d'accueil" ><span>Zombitrip.com</span></a></h1>
+
+  <nav class="navbar">
+    <input id="menu-toggle" class="menu-toggle" type="checkbox" />
+    <label for="menu-toggle">
+      <span class="icon-menu"><img src='https://gauzy.fr/osburger.svg' height='40' width='40'/></span>
+      <span class="icon-cross"><img src='https://gauzy.fr/osburger.svg' height='40' width='40'/></span>
+    </label>
+    <ul>
+      <li>
+        <a href="/actualites.html" title="Actualités">Actualités</a>
+      </li>
+      <li>
+        <a href="/animation.html" title="Animation">Animation</a>
+      </li>
+      <li>
+        <a href="/vie-sociale.html" title="Vie sociale">Vie sociale</a>
+      </li>
+      <li>
+        <a href="/bricolage.html" title="Bricolage">Bricolage</a>
+      </li>
+      <li>
+        <a href="/survie.html" title="Survie">Survie</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<article class="article" data-uid="1">
+
+  <header>
+    <h2>
+      Les hordes de l'Ouest se noient dans l'océan
+    </h2>
+    <h3 class="chapo">
+      Le bruit des vagues aidant, les Bretons seront bientôt débarassés d'une autre vague... celle des zombies.
+    </h3>
+    <p class="date-created">
+      <time datetime="2052-10-06T11:44:38.242Z">
+        6 octobre 2020
+      </time>
+    </p>
+    <p class="author-name">
+      {{authorName}
+    }</p>
+    <picture>
+      <source media="(min-width: 720px)" srcset="{{image[0].tablet.url}}" />
+      <source media="(min-width: 1280px)" srcset="{{image[0].desktop.url}}" />
+      <img src="{{image[0].mobile.url}}" alt="{{image[0].description}}" />
+    </picture>
+  </header>
+
+  <div class="content">
+    <p>Continuant leur trajectoire, les 2 hordes principales quitteront bientôt la Bretagne, direction l'Amérique ! Mais ne baissez pas votre garde pour autant.</p>
+
+  <h4>Les "perdus de vue"</h4>
+
+  <p>Certains zombies se détachent toujours de la horde principale, créant parfois même de véritables groupes.  Prenez donc garde, particulièrement sur la trajectoire de la horde disparue : au détour d'une rue déjà nettoyée il y a quelques mois, vous pourriez encore croiser certains surprises... mortelles.</p>
+
+  <blockquote> Le petit Zombie attend sa maman à l'accueil</blockquote>
+
+  <p>Les détachés solitaires sont beaucoup moins dangereux. On les retrouve bien souvent coincés dans un obstacle, une flaque de boue... ou, tout simplement, en bas d'escaliers qu'ils ne savent pas monter.</p>
+
+  <h4>Re-nettoyer les rues</h4>
+
+  <p>Et c'est reparti pour la corvée ! Une ville qu'on pensait nettoyée n'est tout à coup plus aussi sûre ! C'est une corvée dont il va falloir s'occuper au plus vite après le passage de la horde. N'attendez pas trop pour re-sécuriser votre périmètre !<br>
+D'autre part, n'oublions pas qu'il restera une grande partie de la horde sur la plage, coincée dans les vagues. C'est l'occasion idéale pour vous entraîner à viser ! Trouvez un point en hauteur assez sécurisé, faites en sorte de ne pas vous faire remarquer... et amusez-vous ! Grâce à nos amis les crabes, les zombies éliminés sur la berge ne seront bientôt qu'un lointain souvenir.</p>
+
+<h4>Suivre l'avancée des troupes ennemies</h4>
+
+<p>Une nouvelle horde traverse actuellement les Pyrénées en direction de notre bon vieux pays. Heureusement, nombreux sont les obstacles qui la ralentissent, entre les torrents, les vallées inondées et autres gouffres, nous avons le temps de nous y préparer. Une petite pensée quand même pour mon vieil ami Gilles, un ermite dont j'ai eu récemment des nouvelles :</p>
+
+<blockquote> J'ai jamais vu un bordel pareil dans la région ! Ils m'ont bouffé mes chèvres, ces cons !</blockquote>
+
+<figure><img src=""/></figure>>
+  </div>
+
+  <footer>
+    <section class="keywords">
+      {{keywords}}
+    </section>
+    <section class="author-presentation">
+      {{authorPresentation}}
+    </section>
+    <section id="related">
+      <header>
+        <h2>À lire ensuite</h2>
+      </header>
+      <div>
+        <!-- Insert Card -->
+        <article class="card">
+          <h2>{{related[0].headline}}</h2>
+          <h3 class="chapo">{{related[0].chapo}}
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et architecto eveniet, dolorum dolor ipsam
+            voluptate laudantium cum quisquam amet ut, aliquid hic qui error animi quis deserunt? Ullam, praesentium
+            vel!
+          </h3>
+          <p class="date-created">
+            <time datetime="{{related[0].dateCreatedISO}}">{{related[0].dateCreatedText}}</time>
+          </p>
+          <p class="author-name">{{related[0].authorName}}</p>
+          <picture>
+            <!--<source media="(min-width: 720px)" srcset="{{related[0].image[0].tablet.url}}" />
+          <source media="(min-width: 1280px)" srcset="{{related[0].image[0].desktop.url}}" />
+          <img src="{{related[0].image[0].mobile.url}}" alt="{{related[0].image[0].description}}" /> -->
+            <img src="https://clovis.gauzy.fr/realisations/20180824_miss-trash.webp"
+              alt="{{related[0].image[0].description}}" />
+          </picture>
+        </article>
+
+        <article class="card">
+          <h2>{{related[1].headline}}</h2>
+          <h3 class="chapo">{{related[1].chapo}}
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et architecto eveniet, dolorum dolor ipsam
+            voluptate laudantium cum quisquam amet ut, aliquid hic qui error animi quis deserunt? Ullam, praesentium
+            vel!
+          </h3>
+          <p class="date-created">
+            <time datetime="{{related[1].dateCreatedISO}}">{{related[1].dateCreatedText}}</time>
+          </p>
+          <p class="author-name">{{related[1].authorName}}</p>
+          <picture>
+            <!--<source media="(min-width: 720px)" srcset="{{related[1].image[0].tablet.url}}" />
+          <source media="(min-width: 1280px)" srcset="{{related[1].image[0].desktop.url}}" />
+          <img src="{{related[1].image[0].mobile.url}}" alt="{{related[1].image[0].description}}" /> -->
+            <img src="https://clovis.gauzy.fr/realisations/20180824_miss-trash.webp"
+              alt="{{related[1].image[0].description}}" />
+          </picture>
+        </article>
+
+        <article class="card">
+          <h2>{{related[2].headline}}</h2>
+          <h3 class="chapo">{{related[2].chapo}}
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et architecto eveniet, dolorum dolor ipsam
+            voluptate laudantium cum quisquam amet ut, aliquid hic qui error animi quis deserunt? Ullam, praesentium
+            vel!
+          </h3>
+          <p class="date-created">
+            <time datetime="{{related[2].dateCreatedISO}}">{{related[2].dateCreatedText}}</time>
+          </p>
+          <p class="author-name">{{related[2].authorName}}</p>
+          <picture>
+            <!--<source media="(min-width: 720px)" srcset="{{related[2].image[0].tablet.url}}" />
+          <source media="(min-width: 1280px)" srcset="{{related[2].image[0].desktop.url}}" />
+          <img src="{{related[2].image[0].mobile.url}}" alt="{{related[2].image[0].description}}" /> -->
+            <img src="https://clovis.gauzy.fr/realisations/20180824_miss-trash.webp"
+              alt="{{related[2].image[0].description}}" />
+          </picture>
+        </article>
+        <!-- End Card -->
+      </div>
+    </section>
+  </footer>
+
+</article>
+
+
+<footer>
+  <p><a href="/contact.html" title="A propos / Nous contacter">Qui sommes-nous / Contact</a></p>
+</footer>
+
+</body>
+</html>
