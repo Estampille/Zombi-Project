@@ -1,217 +1,202 @@
-body{
-    background-color: #164450;
-    color:#fff;
-  font-family: 'Arvo', serif;
-}
 
-
-
-
+/** About css**/
 .mission{
    
-        display: grid;
-        grid-template-columns: 10% 2fr;
-        grid-template-rows: 10% 1fr ;
-        grid-auto-columns: auto;
-        position: relative;
-        margin-bottom: 0;
-        
-    }
-    
-    .titre{
-        grid-row: 1/2;
-        grid-column: 1/3;
-        justify-self: center;
-        
-    }
-
-    h2{
-        font-size: 300%;
-    }
-    picture{
-        grid-column: 1/3;
-        grid-row: 2/3;
-        margin-top: 20%;
-        
-    }
-    .mission img{
-     width: 60%;
-     border-radius: 10px;
-     font-size: xx-large;
-    
-
-    }
-    
-    .resumer{
-        grid-column: 1/4;
-        grid-row: 3/4;
-        margin-bottom: 0;
-    }
-
-
-
-
-    .biographie{
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: 5% 1fr 1fr 1fr 1fr;
-        margin-top: 0;
-        margin-bottom: 0;
-        font-size: 60%;
-        
-        
-    }
-    
-    .team{
-        grid-column: 1/4;
-        grid-row: 1/2;
-        justify-self: center;
-        margin-top: 20%;
-    }
-    
-    article:nth-of-type(1){
-        grid-column: 1/3;
-        grid-row: 2/3;
-    }
-    
-    article:nth-of-type(2){
-        grid-column: 1/3;
-        grid-row: 3/4;
-    }
-    
-    article:nth-of-type(3){
-        grid-column: 1/3;
-        grid-row: 4/5;
-    }
-    article:nth-of-type(4){
-        grid-column: 1/3;
-        grid-row: 5/6;
-    }
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr
+    grid-template-rows: 8% 1fr 1fr ;
+    grid-auto-columns: auto;
+    position: relative;
+    margin-bottom: 0;
+  }
+  .titre{
+    grid-row: 1/2;
+    grid-column: 1/3;
+    justify-self: center;
+    position: relative;
+  }
+  
+  .mission h2{
+    font-size: 3em;
+  }
+  .picmission{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin-top: 10%;
+    position: relative;
+  }
+  .mission img{
+  width: 60%;
+  border-radius: 10px;
+  text-align: end;
+  
+  }
+  
+  .resumer{
+    grid-column: 1/4;
+    grid-row: 3/4;
+    margin-bottom: 0;
+  }
+  
+  .biographie{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 5% 1fr 1fr 1fr 1fr;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 60%;
     
     
+  }
+  
+  .team{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    justify-self: center;
+    margin-top: 20%;
+  }
+  
+  article:nth-of-type(1).bio{
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  
+  article:nth-of-type(2).bio{
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  
+  article:nth-of-type(3).bio{
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+  article:nth-of-type(4).bio{
+    grid-column: 1/3;
+    grid-row: 5/6;
+  }
+  
+  
+  
+  .bio{
     
-    .bio{
-        
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr fr;
-        margin-bottom: 5%;
-        margin :3%;
-        margin-top: 8%;
-    }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr fr;
+    margin-bottom: 5%;
+    margin :3%;
+    margin-top: 8%;
+  }
+  
+  img{
+    width: 40%;
+  }
+  
+  .bio:nth-of-type(odd) picture{
+    grid-column: 1/3;
+    grid-row: 2/3;
+   
+  }
+  
+  .bio:nth-of-type(even) picture{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: right;
+    width: 60%;
+  
+  }
+  
+  .bio:nth-of-type(odd) .quote{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    justify-self: left;
+    align-self: center;
+    margin-left: 10%;
     
-    img{
-        width: 100%;
-    }
+  }
+  
+  .bio:nth-of-type(even) .quote{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+    margin-left: 10%;
     
-    .bio:nth-of-type(odd) picture{
-        grid-column: 1/3;
-        grid-row: 2/3;
-       
+  }
+  .nom{
+    grid-column: 1/5;
+    grid-row: 1/2;
+  }
+  
+  .resume{
+    grid-column: 1/5;
+    grid-row: 3/5;
+    justify-self: right;
+    align-content: center;
+    position: relative;
+    margin-bottom: 20%;
+  }
+  
+  
+  /* BREACK POINT  */
+  
+  @media screen and (min-width: 720px){
+  
+    .mission{
+        grid-template-columns: 1fr 1fr;
+        grid-row: 1fr 1fr;
     }
+  
+  
+  .titre{
+    grid-column: 1/3;
+    grid-row: 1/2;
     
-    .bio:nth-of-type(even) picture{
-        grid-column: 3/5;
-        grid-row: 2/3;
-        text-align: right;
-        
-        
-        
-
-    }
-
-    .bio:nth-of-type(odd) .quote{
-        grid-column: 3/5;
-        grid-row: 2/3;
-        justify-self: left;
-        align-self: center;
-        margin-left: 10%;
-        
-    }
-    
-    .bio:nth-of-type(even) .quote{
-        grid-column: 1/3;
-        grid-row: 2/3;
-        justify-self: center;
-        align-self: center;
-        margin-left: 10%;
-        
-    }
-    .nom{
-        grid-column: 1/5;
-        grid-row: 1/2;
-    }
-    
-    .resume{
-        grid-column: 1/5;
-        grid-row: 3/5;
-        justify-self: right;
-        align-content: center;
-        position: relative;
-    }
-
-
-    @media screen and (min-width: 720px){
-    
-        .mission{
-            grid-template-columns: 1fr 1fr;
-            grid-row: 1fr 1fr;
-           
-            
-        }
-      
-        
-
-    .titre{
-        grid-column: 1/3;
-        grid-row: 1/2;
-        
-    }
-    h2{
-        font-size: 10EM;
-    
-    }   
-    picture{
-        margin-top: 10%;
-    }
-
-    .mission img{
-        width: 40%;
-        align-content: start;
-        grid-column: 1/3;
-        grid-row: 2/3;
-        margin-bottom: 0;
-    }
-    section .resumer{
-        grid-column: 2/3;
-        grid-row: 2/3;
-        font-size: 7em;
-        justify-self: right;
-        align-self: center;
-        
-        
-
-    }
-
-
-
-    .team{
-        margin-top: auto;
-    }
-
-    h3{
-        font-size: 9em;
-    }
-
-    p{
-        font-size: 7em;
-        
-    }
-    
-    article img{
-        width: 60%;
-        
-    }
-
-    }
-
+  }
+  .mission h2{
+    font-size: 5EM;
+  
+  }   
+  .picmission{
+    margin-top: 10%;
+  }
+  
+  .mission img{
+    width: 40%;
+    align-content: start;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin-bottom: 0;
+  }
+  
+  section .resumer{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: 1.9em;
+    justify-self: right;
+    align-self: center;
+  }
+  
+  .quote{
+    font-size: 3em;
+  }
+  
+  .team{
+    margin-top: 15%;
+    font-size: 4em;
+  
+  }
+  
+  .bio h3{
+    font-size: 3em;
+  }
+  
+  .bio p{
+    font-size: 1.9em;
+  }
+  
+  .bio  img{
+    width: 60%; 
+  }
+  
+  }
+  
