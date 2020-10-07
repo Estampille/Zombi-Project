@@ -408,6 +408,22 @@ figure img {
 }
 
 
+/*CATEGORIES*/
+#categories .card h3{
+  display: inline-block;
+}
+#categories .card h3{
+  font-size:2em;
+}
+#categories .author-name{
+  text-align:right;
+}
+#categories .card {
+  margin-bottom:2em;
+}
+#categories h3{
+  font-family: 'Arvo', serif;
+}
 
 /* CATEGORIES BREACK POINT 1 */
 @media screen and (min-width:720px){
@@ -422,11 +438,15 @@ figure img {
     width:47%;
     margin:1%;
   }
+
 }
 
 /* CATEGORIES BREACK POINT 2 */
 @media screen and (min-width:966px){
   #categories img {
     max-height:30vh;
+  }
+  #categories .chapo, #categories .date-created{
+    display: inline-block;
   }
 }
