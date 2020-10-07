@@ -4,91 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zombi-project</title>
-    <meta name="author" content="Miguel, Clovie, Valérie, Maxime">
-    <link rel="stylesheet" href ="accueil.css">
+    <meta name="author" content="Miguel, Clovis, Valérie, Maxime">
+    <link rel="stylesheet" href ="./accueil.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link href="https://gauzy.fr/fonts/Adler.css" rel="stylesheet">
 </head>
 <body>
 
 <header>
-    <h1><a class="home-link" href="#" title="Retour à la page d'accueil" ><img src="img/logo.png" class="logo"/><span>Nom du blog</span></a></h1>
+    <h1><a class="home-link" href="#" title="Retour à la page d'accueil" ><span>Zombitrip.com</span></a></h1>
 </header>
+
 <section id="actualites">
-    <picture class="Card-img"><img src="via.placeholder.com/150">
-    <h2>Actualités</h2>
+    <h2>Actualités gzegzg</h2>
+    <a href='#'>
+    <picture class="actu-image"><img alt="newsOfDay" src="https://clovis.gauzy.fr/realisations/20180824_miss-trash.webp"/>
     </picture>
-
-<section id="articles">
-
-    <article class="card">
-        <a href="#">
-            <picture class="card-image"><img src="https://wsmpyg.db.files.1drv.com/y4meXSz4qkvf2ixkA4d0mYoM76MD6vkTPw5qijsJoK-8E_zQ6xO_05JfEWiA53TdZPlP9o9dgD0AQZdi6OToxXEEbZbXklqq42VduJLd2Dpd0eiSXRCQuEEsIycBMW5baWsnfBMPtVYodg0W9-O3l0nbYO0D1ZtcHNFv5AmxqfiUqbFWJUxrvtHbq0W9LYxN3AJQgbw5TmHzA42OpCBDPXHxQ?width=1536&height=1920&cropmode=none">
-                <div class="card-body">
-                        <!-- date publication -->
-                    <p class="card-date">
-                        <time> D-day</time>
-                    </p>
-                    <!-- titre article -->
-                    <title class="card-title">
-                        <h3>le danger n'est pas l'ignorance mais l'ignorance de l'ignorance</h3>
-                    </title>
-                    <abstract class="card-abstract">
-                        <!-- résumé article-->
-                        <p>si j'aurais su je l'avais pas fait</p>
-                    </abstract>
-                </div>
-            </picture>
-        </a>
-    </article>
+    </a>
+    <p>descriptumus</p>
+</section> 
 
 
-    <article class="card">
-        <a href="#">
-            <picture class="card-image"><img src="https://wsmpyg.db.files.1drv.com/y4meXSz4qkvf2ixkA4d0mYoM76MD6vkTPw5qijsJoK-8E_zQ6xO_05JfEWiA53TdZPlP9o9dgD0AQZdi6OToxXEEbZbXklqq42VduJLd2Dpd0eiSXRCQuEEsIycBMW5baWsnfBMPtVYodg0W9-O3l0nbYO0D1ZtcHNFv5AmxqfiUqbFWJUxrvtHbq0W9LYxN3AJQgbw5TmHzA42OpCBDPXHxQ?width=1536&height=1920&cropmode=none">
-                <div class="card-body">
-                        <!-- date publication -->
-                    <p class="card-date">
-                        <time> D-day</time>
-                    </p>
-                    <!-- titre article -->
-                    <title class="card-title">
-                        <h3>le danger n'est pas l'ignorance mais l'ignorance de l'ignorance</h3>
-                    </title>
-                    <abstract class="card-abstract">
-                        <!-- résumé article-->
-                        <p>si j'aurais su je l'avais pas fait</p>
-                    </abstract>
-                </div>
-            </picture>
-        </a>
-    </article>
+<section class="news">
+
+<article class="card">
+    <h2>{{related[1].headline}}</h2>
+    <h3 class="chapo">{{related[1].chapo}}
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et architecto eveniet, dolorum dolor ipsam
+      voluptate laudantium cum quisquam amet ut, aliquid hic qui error animi quis deserunt? Ullam, praesentium
+      vel!
+    </h3>
+    <p class="date-created">
+      <time datetime="{{related[1].dateCreatedISO}}">{{related[1].dateCreatedText}}</time>
+    </p>
+    <p class="author-name">{{related[1].authorName}}</p>
+    <picture>
+      <!--<source media="(min-width: 720px)" srcset="{{related[1].image[0].tablet.url}}" />
+    <source media="(min-width: 1280px)" srcset="{{related[1].image[0].desktop.url}}" />
+    <img src="{{related[1].image[0].mobile.url}}" alt="{{related[1].image[0].description}}" /> -->
+      <img src="https://clovis.gauzy.fr/realisations/20180824_miss-trash.webp"
+        alt="{{related[1].image[0].description}}" />
+    </picture>
+  </article>
+
+  <article class="card">
+    <h2>{{related[2].headline}}</h2>
+    <h3 class="chapo">{{related[2].chapo}}
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et architecto eveniet, dolorum dolor ipsam
+      voluptate laudantium cum quisquam amet ut, aliquid hic qui error animi quis deserunt? Ullam, praesentium
+      vel!
+    </h3>
+    <p class="date-created">
+      <time datetime="{{related[2].dateCreatedISO}}">{{related[2].dateCreatedText}}</time>
+    </p>
+    <p class="author-name">{{related[2].authorName}}</p>
+    <picture>
+      <!--<source media="(min-width: 720px)" srcset="{{related[2].image[0].tablet.url}}" />
+    <source media="(min-width: 1280px)" srcset="{{related[2].image[0].desktop.url}}" />
+    <img src="{{related[2].image[0].mobile.url}}" alt="{{related[2].image[0].description}}" /> -->
+      <img src="https://clovis.gauzy.fr/realisations/20180824_miss-trash.webp"
+        alt="{{related[2].image[0].description}}" />
+    </picture>
+  </article>
+
+  <article class="card">
+    <h2>{{related[3].headline }}</h2>
+    <h3 class="chapo">{{related[3].chapo}}
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et architecto eveniet, dolorum dolor ipsam
+      voluptate laudantium cum quisquam amet ut, aliquid hic qui error animi quis deserunt? Ullam, praesentium
+      vel!
+    </h3>
+    <p class="date-created">
+      <time datetime="{{related[1].dateCreatedISO}}">{{related[3].dateCreatedText}}</time>
+    </p>
+    <p class="author-name">{{related[3].authorName}}</p>
+    <picture>
+      <!--<source media="(min-width: 720px)" srcset="{{related[3].image[0].tablet.url}}" />
+    <source media="(min-width: 1280px)" srcset="{{related[3].image[0].desktop.url}}" />
+    <img src="{{related[3].image[0].mobile.url}}" alt="{{related[3].image[0].description}}" /> -->
+      <img src="https://clovis.gauzy.fr/realisations/20180824_miss-trash.webp"
+        alt="{{related[3].image[0].description}}" />
+    </picture>
+  </article>
+
+  <article class="card">
+    <h2>{{related[4].headline}}</h2>
+    <h3 class="chapo">{{related[4].chapo}}
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et architecto eveniet, dolorum dolor ipsam
+      voluptate laudantium cum quisquam amet ut, aliquid hic qui error animi quis deserunt? Ullam, praesentium
+      vel!
+    </h3>
+    <p class="date-created">
+      <time datetime="{{related[4].dateCreatedISO}}">{{related[4].dateCreatedText}}</time>
+    </p>
+    <p class="author-name">{{related[4].authorName}}</p>
+    <picture>
+      <!--<source media="(min-width: 720px)" srcset="{{related[4].image[0].tablet.url}}" />
+    <source media="(min-width: 1280px)" srcset="{{related[4].image[0].desktop.url}}" />
+    <img src="{{related[4].image[0].mobile.url}}" alt="{{related[4].image[0].description}}" /> -->
+      <img src="https://clovis.gauzy.fr/realisations/20180824_miss-trash.webp"
+        alt="{{related[4].image[0].description}}" />
+    </picture>
+  </article>
 
 
-    <article class="card">
-        <a href="#">
-            <picture class="card-image"><img src="https://wsmpyg.db.files.1drv.com/y4meXSz4qkvf2ixkA4d0mYoM76MD6vkTPw5qijsJoK-8E_zQ6xO_05JfEWiA53TdZPlP9o9dgD0AQZdi6OToxXEEbZbXklqq42VduJLd2Dpd0eiSXRCQuEEsIycBMW5baWsnfBMPtVYodg0W9-O3l0nbYO0D1ZtcHNFv5AmxqfiUqbFWJUxrvtHbq0W9LYxN3AJQgbw5TmHzA42OpCBDPXHxQ?width=1536&height=1920&cropmode=none">
-                <div class="card-body">
-                        <!-- date publication -->
-                    <p class="card-date">
-                        <time> D-day</time>
-                    </p>
-                    <!-- titre article -->
-                    <title class="card-title">
-                        <h3>le danger n'est pas l'ignorance mais l'ignorance de l'ignorance</h3>
-                    </title>
-                    <abstract class="card-abstract">
-                        <!-- résumé article-->
-                        <p>si j'aurais su je l'avais pas fait</p>
-                    </abstract>
-                </div>
-            </picture>
-        </a>
-    </article>
+   
 
 </section>
-        
-</section>
-
-
 
     
 </body>
