@@ -308,9 +308,6 @@ article h2{
   
 } */
 
-.article {
-  /* context needed */
-}
 
 .article > header {
   text-align: center;
@@ -321,13 +318,16 @@ article h2{
 }
 
 .chapo {
-  font-size: 1.1em;  
+  font-size: 1.15em;  
   font-weight: 500;
+  margin: 1em 0;
 }
 
+.categorie,
 .date-created,
 .author-name {
   display: inline-block;
+  margin: 0 .25em;
 }
 
 .content,
@@ -399,10 +399,14 @@ figure img {
     float: left;
     margin: 0 1em .25em 0;
   }
+  figure img {
+    max-width: 45vw;
+  }
   figure:nth-of-type(2n) {
     float: right;
     margin: 0 0 .25em 1em;
   }
+
   .article > footer {
     clear: both;
   }
