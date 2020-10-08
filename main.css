@@ -65,7 +65,7 @@ header h1{
   width:100%;
   position: fixed;
   background: hsla(192, 57%, 20%, 0.849);
-  top: 5em;
+  top: 3.9em;
   right: 0;
   padding: 0;
   margin: 0;
@@ -130,6 +130,7 @@ body > footer{
   height:40px;
   bottom:0;
   background-color:#164450;
+  border-top: solid 0.5px #ffffff38;
 }
 body > footer ul li{
   position:relative;
