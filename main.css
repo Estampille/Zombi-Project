@@ -555,7 +555,8 @@ article:nth-of-type(4).bio{
   
 }
 .mission h2{
-  font-size: 5EM;
+  font-size: 4EM;
+  align-self: center;
 
 }   
 .picmission{
@@ -570,12 +571,8 @@ article:nth-of-type(4).bio{
   margin-bottom: 0;
 }
 
-section .resumer{
-  grid-column: 2/3;
-  grid-row: 2/3;
-  font-size: 1.9em;
-  justify-self: right;
-  align-self: center;
+.resumer{
+  font-size: 1.2em;
 }
 
 .quote{
