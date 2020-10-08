@@ -584,9 +584,34 @@ article:nth-of-type(4).bio{
 }
 
 
-.quote{
-  font-size: 3em;
+
+.bio{
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 5% 1fr 1fr;
+  margin-top: 0;
+  margin-bottom: 0;
 }
+.bio:nth-of-type(odd) .quote{
+  grid-column: 2/4;
+  grid-row: 2/3;
+  font-size: 3em;
+  margin-left: 10%;
+  margin-top: 20%;
+  width: 50%;
+  height: 15%;
+ 
+}
+
+
+
+.bio:nth-of-type(even) .quote{
+  grid-column: 1/2;
+  grid-row: 2/3;
+  font-size: 3em;
+  margin-left: 10%;
+
+}
+
 
 .team{
   
@@ -598,12 +623,32 @@ article:nth-of-type(4).bio{
   font-size: 3em;
 }
 
-.bio p{
+.bio:nth-of-type(even) p{
   font-size: 1.9em;
+  grid-column: 1/3;
+  grid-row: 2/4;
+  margin-right: 10%;
+  margin-bottom: 0;
 }
 
-.bio  img{
-  width: 60%; 
+.bio:nth-of-type(odd) p{
+  font-size: 1.9em;
+  grid-column: 2/4;
+  grid-row: 2/4;
+  margin-left: 10%;
+  margin-bottom: 0;
+  
+}
+
+.bio:nth-of-type(odd) img{
+  width: 50%; 
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+.bio:nth-of-type(even) img{
+  width: 50%; 
+  grid-column: 2/4;
+  grid-row: 1/4;
 }
 
 }
