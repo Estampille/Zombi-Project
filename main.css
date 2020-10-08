@@ -65,7 +65,7 @@ header h1{
   width:100%;
   position: fixed;
   background: hsla(192, 57%, 20%, 0.849);
-  top: 3.9em;
+  top: 5em;
   right: 0;
   padding: 0;
   margin: 0;
@@ -826,5 +826,9 @@ section .resumer{
   color:#240f19;
 }
 .rainbow-footer{
-  background-color: #792b80;
+  background-color: #792b80!important;
+}
+.rainbow-button{
+  background-color: #792b80!important;
+  color: #ffed5b;
 }
