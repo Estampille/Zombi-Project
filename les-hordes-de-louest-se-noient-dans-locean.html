@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Non</title>
+    <meta name="description" content="Le bruit des vagues aidant, les Bretons seront bientôt débarassés d'une autre vague... celle des zombies.">
+    <title>Les hordes de l'Ouest se noient dans l'océan</title>
     <meta name="author" content="Miguel, Clovis, Valérie, Maxime">
     <link href="https://gauzy.fr/css/_reset.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
@@ -23,19 +24,19 @@
     </label>
     <ul>
       <li>
-        <a href="/actualites" title="Actualités">Actualités</a>
+        <a href="/actualites.html" title="Actualités">Actualités</a>
       </li>
       <li>
-        <a href="/animation" title="Animation">Animation</a>
+        <a href="/animation.html" title="Animation">Animation</a>
       </li>
       <li>
-        <a href="/vie-sociale" title="Vie sociale">Vie sociale</a>
+        <a href="/vie-sociale.html" title="Vie sociale">Vie sociale</a>
       </li>
       <li>
-        <a href="/bricolage" title="Bricolage">Bricolage</a>
+        <a href="/bricolage.html" title="Bricolage">Bricolage</a>
       </li>
       <li>
-        <a href="/survie" title="Survie">Survie</a>
+        <a href="/survie.html" title="Survie">Survie</a>
       </li>
     </ul>
   </nav>
@@ -45,28 +46,54 @@
 
   <header>
     <h2>
-      {{headline}}
+      Les hordes de l'Ouest se noient dans l'océan
     </h2>
     <h3 class="chapo">
-      {{chapo}}
+      Le bruit des vagues aidant, les Bretons seront bientôt débarassés d'une autre vague... celle des zombies.
     </h3>
+    <p class="categorie">
+      <a href="/actualites.html">
+        Actualites
+      </a>
+    </p>
     <p class="date-created">
-      <time datetime="{{dateCreatedISO}}">
-        {{dateCreatedText}}
+      <time datetime="2052-10-06T11:44:38.242Z">
+        6 octobre 2020
       </time>
     </p>
     <p class="author-name">
-      {{authorName}
-    }</p>
+      Val
+    </p>
     <picture>
-      <source media="(min-width: 720px)" srcset="{{image[0].tablet.url}}" />
-      <source media="(min-width: 1280px)" srcset="{{image[0].desktop.url}}" />
-      <img src="{{image[0].mobile.url}}" alt="{{image[0].description}}" />
+      <img src="/img/hordes-bretagne-ocean.jpg" alt="Vue de l'océan" />
     </picture>
   </header>
 
   <div class="content">
-    {{htmlContent}}
+    <p>Continuant leur trajectoire, les 2 hordes principales quitteront bientôt la Bretagne, direction l'Amérique ! Mais ne baissez pas votre garde pour autant.</p>
+
+  <h4>Les "perdus de vue"</h4>
+
+  <p>Certains zombies se détachent toujours de la horde principale, créant parfois même de véritables groupes.  Prenez donc garde, particulièrement sur la trajectoire de la horde disparue : au détour d'une rue déjà nettoyée il y a quelques mois, vous pourriez encore croiser certains surprises... mortelles.</p>
+
+  <blockquote> Le petit Zombie attend sa maman à l'accueil</blockquote>
+
+  <p>Les détachés solitaires sont beaucoup moins dangereux. On les retrouve bien souvent coincés dans un obstacle, une flaque de boue... ou, tout simplement, en bas d'escaliers qu'ils ne savent pas monter.</p>
+
+  <h4>Re-nettoyer les rues</h4>
+
+  <p>Et c'est reparti pour la corvée ! Une ville qu'on pensait nettoyée n'est tout à coup plus aussi sûre ! C'est une corvée dont il va falloir s'occuper au plus vite après le passage de la horde. N'attendez pas trop pour re-sécuriser votre périmètre !<br>
+D'autre part, n'oublions pas qu'il restera une grande partie de la horde sur la plage, coincée dans les vagues. C'est l'occasion idéale pour vous entraîner à viser ! Trouvez un point en hauteur assez sécurisé, faites en sorte de ne pas vous faire remarquer... et amusez-vous ! Grâce à nos amis les crabes, les zombies éliminés sur la berge ne seront bientôt qu'un lointain souvenir.</p>
+
+<h4>Suivre l'avancée des troupes ennemies</h4>
+
+<p>Une nouvelle horde traverse actuellement les Pyrénées en direction de notre bon vieux pays. Heureusement, nombreux sont les obstacles qui la ralentissent, entre les torrents, les vallées inondées et autres gouffres, nous avons le temps de nous y préparer. Une petite pensée quand même pour mon vieil ami Gilles, un ermite dont j'ai eu récemment des nouvelles :</p>
+
+<blockquote> J'ai jamais vu un bordel pareil dans la région ! Ils m'ont bouffé mes chèvres, ces cons !</blockquote>
+
+<figure>
+  <img src="/img/hordes-bretagne-pyrenees.jpg" title="Photo: Jean Louis Tosque"/>
+</figure>
   </div>
 
   <footer>
@@ -150,11 +177,8 @@
 
 
 <footer>
-  <p><a href="/contact" title="A propos / Nous contacter">Qui sommes-nous / Contact</a></p>
+  <p><a href="/contact.html" title="A propos / Nous contacter">Qui sommes-nous / Contact</a></p>
 </footer>
-
-<script type="text/javascript" crossorigin="anonymous" src="https://gauzy.fr/js/marked.min.js"></script>
-<script type="text/javascript" src="articles.js"></script>
 
 </body>
 </html>
