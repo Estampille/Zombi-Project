@@ -131,14 +131,19 @@ body > footer{
   bottom:0;
   background-color:#164450;
 }
-body > footer p{
+body > footer ul li{
   position:relative;
   top:10px;
   font-size:1em;
 }
-footer a{
-  color:#fff;
+
+body > footer .navbar-footer ul {
+  justify-content:space-evenly;
+  display:flex;
+  flex-direction:row;
 }
+
+
 /* END FOOTER */
 
 /* BREACK POINT 1 */
@@ -183,7 +188,8 @@ footer a{
     font-size:1em;
   }
   body > footer{
-    position:relative;}
+    position:relative;
+  }
 }
 /* ============ */
 
@@ -531,7 +537,6 @@ input[type=submit]:hover {
 }
 
 
-/* à supprimer ? garder certains style pour les breack-points ?*/
 
 
 /* CATEGORIES BREACK POINT 1 */
@@ -803,4 +808,13 @@ section .resumer{
   width: 60%; 
 }
 
+}
+
+
+/* rainbow mode */
+body.rainbow{
+  background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%)!important;
+  color:#240f19;;
 }
