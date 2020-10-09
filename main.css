@@ -833,3 +833,20 @@ section .resumer{
   background-color: #792b80!important;
   color: #ffed5b;
 }
+
+.interview li {
+  list-style: none;
+  margin-bottom: 1.5em;
+}
+
+.interview .who h3 {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.interview blockquote {
+  font-style: normal;
+  border: none;
+  margin: .5em 0;
+  padding: 0;
+}
