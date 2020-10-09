@@ -10,34 +10,34 @@
 </head>
 <body>
 
-    <header>
-      <h1><a href="/" title="Retour à la page d'accueil" ><span>Zombitrip.com</span></a></h1>
-
-      <nav class="navbar">
-        <input id="menu-toggle" class="menu-toggle" type="checkbox" />
-        <label for="menu-toggle">
-          <span class="icon-menu"><img src='https://gauzy.fr/osburger.svg' height='40' width='40' alt="Menu"/></span>
-          <span class="icon-cross"><img src='https://gauzy.fr/osburger.svg' height='40' width='40' alt="Menu"/></span>
-        </label>
-        <ul>
-          <li>
-            <a href="/actualites.html" title="Actualités">Actualités</a>
-          </li>
-          <li>
-            <a href="/animation.html" title="Animation">Animation</a>
-          </li>
-          <li>
-            <a href="/vie-sociale.html" title="Vie sociale">Vie sociale</a>
-          </li>
-          <li>
-            <a href="/bricolage.html" title="Bricolage">Bricolage</a>
-          </li>
-          <li>
-            <a href="/survie.html" title="Survie">Survie</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+  <header>
+    <h1><a href="/" title="Retour à la page d'accueil" ><span>Zombitrip.com</span></a></h1>
+  
+    <nav class="navbar">
+      <input id="menu-toggle" class="menu-toggle" type="checkbox" />
+      <label for="menu-toggle">
+        <span class="icon-menu"><img src='https://gauzy.fr/osburger.svg' height='40' width='40' alt="Menu"/></span>
+        <span class="icon-cross"><img src='https://gauzy.fr/osburger.svg' height='40' width='40' alt="Menu"/></span>
+      </label>
+      <ul>
+        <li>
+          <a href="/actualites.html" title="Actualités">Actualités</a>
+        </li>
+        <li>
+          <a href="/animation.html" title="Animation">Animation</a>
+        </li>
+        <li>
+          <a href="/vie-sociale.html" title="Vie sociale">Vie sociale</a>
+        </li>
+        <li>
+          <a href="/bricolage.html" title="Bricolage">Bricolage</a>
+        </li>
+        <li>
+          <a href="/survie.html" title="Survie">Survie</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
 <section class="mission">
     <h2 class="titre">Notre mission</h2>
@@ -83,8 +83,15 @@
 </section>
 
 <footer>
-    <p><a href="/contact" title="A propos / Nous contacter">Qui sommes-nous / Contact</a></p>
+  <nav class="navbar-footer">
+    <ul>
+    <li><a href="/about.html" title="A propos / Nous contacter">Qui sommes-nous</a></li> 
+    <li><a href="/contact.html" title="A propos / Nous contacter">Contact</a></li>
+    <li><button id="toggleRainbow">Voir la vie en rose</button></li>
+    </ul>
+  </nav>
 </footer>
+<script src="rainbowmode.js"></script>
     
 </body>
 </html>
