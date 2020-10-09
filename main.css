@@ -584,12 +584,13 @@ article:nth-of-type(4).bio{
 }
 
 
-
+/** partie biographie **/
 .bio{
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 5% 1fr 1fr;
   margin-top: 0;
   margin-bottom: 0;
+  height: 1200px;
 }
 .bio:nth-of-type(odd) .quote{
   grid-column: 2/4;
@@ -606,7 +607,7 @@ article:nth-of-type(4).bio{
 
 .bio:nth-of-type(even) .quote{
   grid-column: 1/2;
-  grid-row: 2/3;
+  grid-row: 2;
   font-size: 3em;
   margin-left: 10%;
 
@@ -631,13 +632,16 @@ article:nth-of-type(4).bio{
   margin-bottom: 0;
 }
 
+
+.bio p{
+  height: 200px;
+}
 .bio:nth-of-type(odd) p{
   font-size: 1.9em;
-  grid-column: 2/4;
-  grid-row: 2/4;
-  margin-left: 10%;
+  grid-column: 1/4;
+  grid-row: 2/3;
+  margin-left: 40%;
   margin-bottom: 0;
-  
 }
 
 .bio:nth-of-type(odd) img{
