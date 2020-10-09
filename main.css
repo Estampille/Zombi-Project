@@ -641,7 +641,7 @@ input[type=submit]:hover {
   position: relative;
 }
 .mission img{
-width: 60%;
+width: 100%;
 border-radius: 10px;
 text-align: end;
 
@@ -753,46 +753,78 @@ article:nth-of-type(4).bio{
 @media screen and (min-width: 720px){
 
   .mission{
-      grid-template-columns: 1fr 1fr;
-      grid-row: 1fr 1fr;
+    display :grid;
+      grid-template-columns: 1fr 1fr 20%;
+      grid-template-rows: 5% 1fr 20%;
   }
 
 
 .titre{
-  grid-column: 1/3;
+  grid-column: 1/4;
   grid-row: 1/2;
   
 }
 .mission h2{
-  font-size: 5EM;
+  font-size: 3EM;
+  align-self: center;
 
 }   
 .picmission{
-  margin-top: 10%;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  
+  width: 100%;
+  margin-right: 0;
 }
 
 .mission img{
-  width: 40%;
+  width: 100%;
   align-content: start;
-  grid-column: 1/3;
-  grid-row: 2/3;
+  
   margin-bottom: 0;
 }
 
-section .resumer{
-  grid-column: 2/3;
-  grid-row: 2/3;
-  font-size: 1.9em;
-  justify-self: right;
-  align-self: center;
+.resumer{
+  font-size: 1.2em;
+  grid-column:2/4 ;
+  grid-row: 2/4 ;
+  margin-left: 10%;
+  margin-top :30%;
 }
 
-.quote{
-  font-size: 3em;
+
+/** partie biographie **/
+.bio{
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 5% 1fr 1fr;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 1200px;
 }
+.bio:nth-of-type(odd) .quote{
+  grid-column: 2/4;
+  grid-row: 2/3;
+  font-size: 3em;
+  margin-left: 10%;
+  margin-top: 20%;
+  width: 50%;
+  height: 15%;
+ 
+}
+
+
+
+.bio:nth-of-type(even) .quote{
+  grid-column: 1/2;
+  grid-row: 2;
+  font-size: 3em;
+  margin-left: 10%;
+
+}
+
 
 .team{
-  margin-top: 15%;
+  
   font-size: 4em;
 
 }
@@ -801,12 +833,35 @@ section .resumer{
   font-size: 3em;
 }
 
-.bio p{
+.bio:nth-of-type(even) p{
   font-size: 1.9em;
+  grid-column: 1/3;
+  grid-row: 2/4;
+  margin-right: 10%;
+  margin-bottom: 0;
 }
 
-.bio  img{
-  width: 60%; 
+
+.bio p{
+  height: 200px;
+}
+.bio:nth-of-type(odd) p{
+  font-size: 1.9em;
+  grid-column: 1/4;
+  grid-row: 2/3;
+  margin-left: 40%;
+  margin-bottom: 0;
+}
+
+.bio:nth-of-type(odd) img{
+  width: 50%; 
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+.bio:nth-of-type(even) img{
+  width: 50%; 
+  grid-column: 2/4;
+  grid-row: 1/4;
 }
 
 }
